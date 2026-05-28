@@ -223,5 +223,18 @@ En un mundo obsesionado con el talento y la nobleza, Yami demuestra que el verda
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="banner.js"></script>
+    <script>
+let visitas = localStorage.getItem("visitas");
+
+if(visitas == null){
+    visitas = 0;
+}
+
+visitas++;
+
+localStorage.setItem("visitas", visitas);
+
+document.write("Visitas: " + visitas);
+</script>
 </body>
 </html>
